@@ -1,4 +1,8 @@
+const mainContainer = document.querySelector("#mainContainer");
+
 const square = document.createElement("div");
-square.style.borderStyle = "solid";
-square.style.padding = "0";
-square.style.margin = "0";
+square.classList.add("square");
+square.textContent = "Test to see the div";
+
+console.log(square);
+mainContainer.appendChild(square);

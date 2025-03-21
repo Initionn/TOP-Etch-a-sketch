@@ -4,5 +4,11 @@
 
 #mainContainer {
     box-sizing: border-box;
-    background-color: antiquewhite;
+    background-color: lightgrey;
+}
+
+.square {
+    border-style: solid;
+    padding: 0;
+    margin: 0;
 }

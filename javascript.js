@@ -15,19 +15,17 @@ const newGrid = document.createElement("button");
 newGrid.textContent = "New Grid?";
 
 
-function createColumns() {
-    const columnSquare = document.createElement("div");
-            columnSquare.className = "square";
-            columnSquare.textContent = "hello";
-            mainContainer.appendChild(columnSquare);
-    }
+// function createColumns() {
+//     const columnSquare = document.createElement("div");
+//             columnSquare.className = "square";
+//             mainContainer.appendChild(columnSquare);
+//     }
 
-    function createRows() {
-        const rowSquare = document.createElement("div");
-        rowSquare.textContent = "hi";
-        rowSquare.classname = "square";
-        columnSquare.appendChild(rowSquare);
-    }
+//     function createRows() {
+//         const rowSquare = document.createElement("div");
+//         rowSquare.classname = "square";
+//         columnSquare.appendChild(rowSquare);
+//     }
 
 
 newGrid.addEventListener("click", () => {
@@ -46,13 +44,11 @@ function createGrid (sections) {
     for (i = 0; i < sections; i++) {
         const columnSquare = document.createElement("div");
         columnSquare.className = "square";
-        columnSquare.textContent = "hello";
         mainContainer.appendChild(columnSquare);
         
         for (ii = 0; ii < (sections - 1); ii++) {
         const rowSquare = document.createElement("div");
-        rowSquare.textContent = "hi";
-        rowSquare.classname = "square";
+        rowSquare.className = "square";
         columnSquare.appendChild(rowSquare);
     }}  
     }

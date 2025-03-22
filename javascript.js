@@ -49,10 +49,15 @@ function createGrid (sections) {
         columnSquare.textContent = "hello";
         mainContainer.appendChild(columnSquare);
         
-        for (ii = 0; ii < sections; ii++) {
+        for (ii = 0; ii < (sections - 1); ii++) {
         const rowSquare = document.createElement("div");
         rowSquare.textContent = "hi";
         rowSquare.classname = "square";
         columnSquare.appendChild(rowSquare);
     }}  
     }
+
+
+    // so they grid starts out 16x16
+mainContainer.replaceChildren();
+createGrid(16);

@@ -14,6 +14,21 @@ const newGrid = document.createElement("button");
 
 newGrid.textContent = "New Grid?";
 
+
+function createColumns() {
+    const columnSquare = document.createElement("div");
+            columnSquare.className = "square";
+            columnSquare.textContent = "hello";
+            mainContainer.appendChild(columnSquare);
+} 
+
+function createRows() {
+    const rowSquare = document.createElement("div");
+    rowSquare.classname = "square";
+    rowSquare.textContent = "hi";
+    columnSquare.appendChild(rowSquare);
+}
+
 newGrid.addEventListener("click", () => {
     let userSelection = prompt("How many squares would you like your grid sides to be? The maximum allowed is 100");
     mainContainer.replaceChildren();
@@ -21,10 +36,8 @@ newGrid.addEventListener("click", () => {
         alert("Oops, can't do that many!")
     } else {
         for (i = 0; i < userSelection; i++) {
-            const newSquare = document.createElement("div");
-            newSquare.className = "square";
-            newSquare.textContent = "hello";
-            mainContainer.appendChild(newSquare);
+            createColumns();
+            createRows();
         }
         }
 

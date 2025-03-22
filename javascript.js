@@ -49,7 +49,7 @@ function createGrid (sections) {
         columnSquare.textContent = "hello";
         mainContainer.appendChild(columnSquare);
         
-        for (e = 0; e < sections; e++) {
+        for (ii = 0; ii < sections; ii++) {
         const rowSquare = document.createElement("div");
         rowSquare.textContent = "hi";
         rowSquare.classname = "square";

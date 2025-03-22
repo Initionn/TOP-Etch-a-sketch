@@ -36,10 +36,23 @@ newGrid.addEventListener("click", () => {
     if (userSelection > 100 || userSelection < 0) {
         alert("Oops, can't do that many!")
     } else {
-        for (i = 0; i < userSelection; i++) {
-            createColumns();
-        }
-        }
-
-})
+        createGrid(userSelection);
+        }}
+    )
+        
 title.appendChild(newGrid);
+
+function createGrid (sections) {
+    for (i = 0; i < sections; i++) {
+        const columnSquare = document.createElement("div");
+        columnSquare.className = "square";
+        columnSquare.textContent = "hello";
+        mainContainer.appendChild(columnSquare);
+        
+        for (e = 0; e < sections; e++) {
+        const rowSquare = document.createElement("div");
+        rowSquare.textContent = "hi";
+        rowSquare.classname = "square";
+        columnSquare.appendChild(rowSquare);
+    }}  
+    }
